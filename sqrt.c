@@ -24,6 +24,7 @@ int main(int argc, char* argv[]) {
 	}
 	else if (input < 0)
 	{
+		printf("NEGSUPPORT: \n");
 		input = (-1)*input;
 		printf("Sqrt of %d is %.2fi\n", input, sqrt(input));
 	}
@@ -32,7 +33,7 @@ int main(int argc, char* argv[]) {
 		printf("Sqrt of %d is %f\n",input,sqrt(input));
 	}
 	
-	// printf("End of program. Exiting.\n");
+	printf("End of program. Exiting.\n");
 	return(0);
 
 } // end main
