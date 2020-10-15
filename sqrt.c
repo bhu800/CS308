@@ -24,11 +24,14 @@ int main(int argc, char* argv[]) {
 	}
 	else if (input < 0)
 	{
-		printf("ERROR: Input must be a positive number.\n\n");
-		exit(-1);
+		input = (-1)*input;
+		printf("Sqrt of %d is %.2fi\n", input, sqrt(input));
 	}
-
-	printf("Sqrt of %d is %f\n",input,sqrt(input));
+	else
+	{
+		printf("Sqrt of %d is %f\n",input,sqrt(input));
+	}
+	
 	printf("End of program. Exiting.\n");
 	return(0);
 
