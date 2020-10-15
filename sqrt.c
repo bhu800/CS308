@@ -10,7 +10,7 @@ positive number. */
 int main(int argc, char* argv[]) {
 	
 	if (argc != 2) {
-		printf("Usage: sqrt input\n\n");
+		printf("DEBUG: Usage: sqrt input\n\n");
 		exit(-1);
 	}
 
@@ -19,20 +19,20 @@ int main(int argc, char* argv[]) {
 	// input check
 	if (input == 0 && strcmp(argv[1], "0"))
 	{
-		printf("ERROR NAN: Input must be a number\n\n");
+		printf("DEBUG: ERROR NAN: Input must be a number\n\n");
 		exit(-1);
 	}
 	else if (input < 0)
 	{
 		input = (-1)*input;
-		printf("Sqrt of %d is %.2fi\n", input, sqrt(input));
+		printf("DEBUG: Sqrt of %d is %.2fi\n", input, sqrt(input));
 	}
 	else
 	{
-		printf("Sqrt of %d is %f\n",input,sqrt(input));
+		printf("DEBUG: Sqrt of %d is %f\n",input,sqrt(input));
 	}
 	
-	printf("End of program. Exiting...\n");
+	printf("DEBUG: End of program. Exiting.\n");
 	return(0);
 
 } // end main
